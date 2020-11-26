@@ -1,8 +1,8 @@
 D = 'E:\3D-QNet\MICCAI_BraTS_2019_Data_Training\HGG\BraTS19_CBICA_AAG_1\';
 Ou = 'E:\3D-QNet\Brats2019_3D Code\T1C-QMUSIG_C8_S2\';
 V = zeros(240,240,155);
-T =ones(240,240);
-F = dir(fullfile(D, '*BraTS19_CBICA_AAG_1_flair*.gz')); 
+%T =ones(240,240);
+F = dir(fullfile(D, '*BraTS19_CBICA_*.gz')); 
 for p = 1:numel(F)
     S = fullfile(D,F(p).name);
     dot = find(F(p).name == '.');
